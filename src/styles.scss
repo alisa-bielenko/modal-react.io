@@ -1,0 +1,113 @@
+.buttonsContainer,
+.footer {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Modal*/
+
+.modalWrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    min-width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    color: #191919;
+    display: flex;
+    flex-direction: column;
+    padding: 52px;
+    position: relative;
+}
+
+.modalImage {
+    width: 300px;
+    height: 200px;
+    background-color: grey;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+
+.closeModalBtn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.closeModalSvg {
+    width: 22px;
+    height: 22px;
+    fill: grey;
+}
+
+.modalHeader {
+    font-size: 32px;
+    line-height: 3.9;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.modalBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.bodyText {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: grey;
+}
+
+.modalBackground {
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: fit-content;
+}
+
+// Buttons
+
+.openFirstModalBtn {
+    background-color: #8A33FD;
+    color: #FFFFFF;
+    &:hover {
+        background-color: #FFFFFF;
+        border-color: #8A33FD;
+        color: #8A33FD;
+    }
+}
+
+.openSecondModalBtn {
+    border-color: #8A33FD;
+    color: #8A33FD;
+    &:hover {
+        background-color: #8A33FD;
+        color: #FFFFFF;
+    }
+}
